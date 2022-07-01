@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ///////////////////////////PARSLEY/////////////////////////////////// */
+@layer components{
+    input.parsley-success,
+    select.parsley-success,
+    textarea.parsley-success {
+        @apply border-2 focus:outline-none border-green-600 focus:ring-green-600 focus:ring-1 focus:border-green-600;
+    }
+
+    input.parsley-error,
+    select.parsley-error,
+    textarea.parsley-error,
+    div.parsley-error {
+        @apply border-2 focus:outline-none border-red-500 focus:ring-red-500 focus:ring-1 focus:border-red-500;
+    }
+
+    .parsley-errors-list {
+        @apply text-red-500 transition-all duration-300 ease-in mt-2 text-sm;
+
+    }
+
+    .parsley-errors-list.filled {
+        opacity: 1;
+    }
+}
+/* ///////////////////////////PARSLEY/////////////////////////////////// */
